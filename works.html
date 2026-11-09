@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Библиотека проектов Tay — айдентика, реклама, полиграфия и авторская графика.">
+  <title>Works Archive — Tay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="works.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<div class="page-shell">
+  <header class="topbar">
+    <a class="wordmark" href="index.html">TAY<span>✳</span></a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html#work" data-ru="Избранное" data-en="Selected">Избранное</a>
+      <a href="index.html#about" data-ru="Обо мне" data-en="About">Обо мне</a>
+      <a href="index.html#contact" data-ru="Контакты" data-en="Contact">Контакты</a>
+    </nav>
+    <div class="header-right"><button class="lang-switch" type="button">RU / EN</button></div>
+    <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">☰</button>
+  </header>
+  <div class="header-subline"><span>INDEPENDENT DESIGNER</span><span>VISUAL ARCHIVE · 2025—2026</span></div>
+
+  <main class="archive-page">
+    <section class="archive-intro">
+      <p class="eyebrow"><span class="eyebrow-line"></span><span data-ru="ПОЛНАЯ БИБЛИОТЕКА" data-en="FULL PROJECT LIBRARY">ПОЛНАЯ БИБЛИОТЕКА</span></p>
+      <h1><span data-ru="Архив" data-en="Works">Архив</span><em data-ru="работ." data-en="archive.">работ.</em></h1>
+      <p data-ru="Большие проекты, небольшие эксперименты и графические истории. Всё, что хочется сохранить и показать." data-en="Big projects, small experiments and visual stories. A collection of work worth keeping and sharing.">Большие проекты, небольшие эксперименты и графические истории. Всё, что хочется сохранить и показать.</p>
+      <div class="archive-count"><strong data-ru="08 ПРОЕКТОВ" data-en="08 PROJECTS">08 ПРОЕКТОВ</strong><span> / TAY VISUAL ARCHIVE</span></div>
+    </section>
+
+    <section class="archive-tools">
+      <label class="search-wrap"><span>⌕</span><input id="work-search" type="search" placeholder="Найти проект / Search projects" aria-label="Поиск проектов"></label>
+      <div class="filters" role="group" aria-label="Фильтр проектов">
+        <button class="filter-button active" data-filter="all" data-ru="Все" data-en="All">Все</button>
+        <button class="filter-button" data-filter="branding" data-ru="Айдентика" data-en="Branding">Айдентика</button>
+        <button class="filter-button" data-filter="advertising" data-ru="Реклама" data-en="Advertising">Реклама</button>
+        <button class="filter-button" data-filter="print" data-ru="Полиграфия" data-en="Print">Полиграфия</button>
+        <button class="filter-button" data-filter="illustration" data-ru="Иллюстрация" data-en="Illustration">Иллюстрация</button>
+        <button class="filter-button" data-filter="graphic" data-ru="Графика" data-en="Graphic">Графика</button>
+      </div>
+    </section>
+
+    <section class="archive-grid" id="archive-grid">
+      <a class="archive-card archive-featured" id="fairy" href="fairy.html" data-category="branding print" data-search="fairy фейри редизайн фирменный стиль упаковка бытовая химия">
+        <div class="archive-image"><img src="assets/fairy/cover.jpg" alt="Fairy — редизайн фирменного стиля и упаковки"><span>01</span><b>↗</b></div>
+        <div class="archive-meta"><div><h2>FAIRY</h2><p data-ru="Редизайн бренда и продуктовой упаковки" data-en="Brand and product packaging redesign">Редизайн бренда и продуктовой упаковки</p></div><small>BRANDING · PACKAGING</small></div>
+      </a>
+
+      <a class="archive-card" id="mur-i-gav" href="mur-i-gav.html" data-category="branding digital" data-search="мур и гав зоомагазин логотип упаковка сайт">
+        <div class="archive-image"><img src="assets/mur-i-gav/cover.jpg" alt="Мур и Гав — визуальная концепция зоомагазина"><span>02</span><b>↗</b></div>
+        <div class="archive-meta"><div><h2>МУР И ГАВ</h2><p data-ru="Айдентика и цифровая среда зоомагазина" data-en="Pet shop identity and digital experience">Айдентика и цифровая среда зоомагазина</p></div><small>BRANDING · DIGITAL</small></div>
+      </a>
+
+      <a class="archive-card" id="oskolki" href="oskolki.html" data-category="branding advertising print graphic" data-search="осколки экзотики гастрономический фестиваль азиатская кухня афиша брошюра мерч">
+        <div class="archive-image"><img src="assets/oskolki/cover.jpg" alt="Осколки экзотики — айдентика гастрономического фестиваля"><span>03</span><b>↗</b></div>
+        <div class="archive-meta"><div><h2>ОСКОЛКИ ЭКЗОТИКИ</h2><p data-ru="Айдентика гастрономического фестиваля" data-en="Food festival visual identity">Айдентика гастрономического фестиваля</p></div><small>BRANDING · EVENT</small></div>
+      </a>
+
+      <a href="kiwi-comfort.html" class="archive-card" data-category="advertising print" data-search="киви и комфорт рекламный плакат чайник бытовые приборы техника">
+        <div class="archive-image"><img src="assets/archive/kiwi-comfort.jpg" alt="Рекламный плакат Киви и Комфорт"><span>04</span></div>
+        <div class="archive-meta"><div><h2>КИВИ И КОМФОРТ</h2><p data-ru="Рекламный плакат бытовой техники" data-en="Home appliance advertising poster">Рекламный плакат бытовой техники</p></div><small>ADVERTISING</small></div>
+      </a>
+
+      <a href="maymun.html" class="archive-card" data-category="advertising print" data-search="маймун ресторан ресторанные плакаты меню реклама">
+        <div class="archive-image maymun-stack">
+          <img src="assets/archive/maymun-01.jpg" alt="Рекламный плакат ресторана Маймун — вариант 1">
+          <img src="assets/archive/maymun-02.jpg" alt="Рекламный плакат ресторана Маймун — вариант 2">
+          <img src="assets/archive/maymun-03.jpg" alt="Рекламный плакат ресторана Маймун — вариант 3">
+          <span>05</span><i>3 POSTERS</i>
+        </div>
+        <div class="archive-meta"><div><h2>МАЙМУН</h2><p data-ru="Серия рекламных плакатов ресторана" data-en="Restaurant advertising poster series">Серия рекламных плакатов ресторана</p></div><small>ADVERTISING · PRINT</small></div>
+      </a>
+
+      <a href="devil-revisions.html" class="archive-card" data-category="illustration graphic" data-search="дьявол вносит правки иллюстрация плакат кот дизайнер">
+        <div class="archive-image"><img src="assets/archive/devil-revisions.jpg" alt="Иллюстрированный плакат Дьявол вносит правки"><span>06</span></div>
+        <div class="archive-meta"><div><h2>ДЬЯВОЛ ВНОСИТ ПРАВКИ</h2><p data-ru="Иллюстрированный плакат" data-en="Illustrated poster">Иллюстрированный плакат</p></div><small>ILLUSTRATION</small></div>
+      </a>
+
+      <a href="mothers-day.html" class="archive-card" data-category="illustration print" data-search="день матери открытка поздравительный плакат 30 ноября">
+        <div class="archive-image"><img src="assets/archive/mothers-day.jpg" alt="Плакат ко Дню матери"><span>07</span></div>
+        <div class="archive-meta"><div><h2>ДЕНЬ МАТЕРИ</h2><p data-ru="Поздравительный плакат" data-en="Mother’s Day poster">Поздравительный плакат</p></div><small>POSTER · ILLUSTRATION</small></div>
+      </a>
+
+      <a href="poster-series.html" class="archive-card" data-category="graphic illustration print" data-search="серия авторских плакатов творческая мастерская графика примени повтори подумай краски">
+        <div class="archive-image poster-stack">
+          <img src="assets/archive/creative-poster-01.jpg" alt="Плакат Подумай — и мир заиграет новыми красками">
+          <img src="assets/archive/creative-poster-02.jpg" alt="Плакат Примени — и твоя идея оживёт в графике">
+          <img src="assets/archive/creative-poster-03.jpg" alt="Плакат Повтори и создай свой шедевр">
+          <span>08</span><i>3 POSTERS</i>
+        </div>
+        <div class="archive-meta"><div><h2>СЕРИЯ ПЛАКАТОВ</h2><p data-ru="Графические работы для творческого проекта" data-en="Graphic posters for a creative project">Графические работы для творческого проекта</p></div><small>POSTER DESIGN</small></div>
+      </a>
+    </section>
+    <p class="archive-empty" hidden data-ru="Ничего не найдено. Попробуй изменить запрос или категорию." data-en="No projects found. Try another search or category.">Ничего не найдено. Попробуй изменить запрос или категорию.</p>
+  </main>
+  <footer class="footer"><a class="wordmark" href="index.html">TAY<span>✳</span></a><p>Visual archive · 2025—2026</p><a href="index.html">На главную ↑</a><small>© 2026 · TAY — GRAPHIC DESIGN PORTFOLIO</small></footer>
+</div>
+</body>
+</html>

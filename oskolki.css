@@ -1,0 +1,54 @@
+
+/* Project 03 — Oskolki Ekzotiki */
+.oskolki-theme{--deep:#33251f;--green:#284c3c;--orange:#c95a3b;--cream:#f5ecdc}
+.oskolki-hero{grid-template-columns:.86fr 1.14fr}
+.oskolki-title{font-family:Georgia,serif!important;font-size:clamp(57px,8.2vw,112px)!important;letter-spacing:-.075em!important;line-height:.9!important;color:#34251f!important}
+.oskolki-title em{font-weight:400;color:#bd5138}
+.oskolki-title span{font-family:Arial,sans-serif;font-size:.24em;color:#c95a3b;vertical-align:top;margin-left:10px}
+.oskolki-cover{height:560px;background:#f2e6d4}
+.oskolki-cover img{object-fit:cover;object-position:center}
+.oskolki-statement{margin:12px 0 70px;background:#b94332;color:#f8efdf;min-height:300px;padding:48px 7%;display:grid;grid-template-columns:160px 1fr auto;gap:35px;align-items:center;overflow:hidden}
+.statement-mark{font-family:Georgia,serif;font-size:120px;line-height:1;opacity:.85}
+.oskolki-statement p{font-family:Georgia,serif;font-size:clamp(35px,5vw,66px);line-height:1.02;margin:0}
+.oskolki-statement span{font-size:8px;letter-spacing:.15em;align-self:end;white-space:nowrap}
+.oskolki-identity img{max-height:700px;object-fit:contain;background:#f4ebdd}
+.oskolki-editorial-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:24px;margin:0 0 85px;align-items:start}
+.oskolki-editorial-grid figure{margin:0;min-width:0;background:#f3eadb}
+.oskolki-editorial-grid img{width:100%;height:100%;max-height:720px;object-fit:contain;display:block}
+.oskolki-editorial-grid figcaption{padding:13px 16px;font-size:8px;letter-spacing:.13em;color:#897c6d}
+.oskolki-editorial-grid .editorial-wide{grid-row:span 2}
+.oskolki-editorial-grid .editorial-wide img{max-height:620px}
+.oskolki-kit img,.oskolki-merch img{max-height:780px;object-fit:cover}
+.oskolki-theme .case-outcome{background:#33251f}
+.oskolki-theme .case-outcome h2 em{color:#e9a15f}
+@media(max-width:760px){
+ .oskolki-hero{grid-template-columns:1fr}
+ .oskolki-cover{height:360px}
+ .oskolki-statement{grid-template-columns:70px 1fr;padding:30px 6%;gap:18px;min-height:220px}
+ .statement-mark{font-size:65px}
+ .oskolki-statement span{grid-column:2}
+ .oskolki-editorial-grid{grid-template-columns:1fr;gap:18px;margin-bottom:55px}
+ .oskolki-editorial-grid .editorial-wide{grid-row:auto}
+ .oskolki-editorial-grid img,.oskolki-editorial-grid .editorial-wide img{max-height:none}
+}
+
+
+/* Shared portfolio polish */
+body{animation:tayPageIn .45s ease both}
+@keyframes tayPageIn{from{opacity:.75}to{opacity:1}}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--orange);outline-offset:4px}
+.reveal-ready{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--reveal-delay,0ms)}
+.reveal-ready.is-visible{opacity:1;transform:translateY(0)}
+.lightbox-trigger{cursor:zoom-in}
+.tay-lightbox{width:min(94vw,1250px);height:min(92vh,900px);max-width:none;max-height:none;padding:55px 76px 45px;border:0;background:rgba(22,27,23,.97);color:#fffdf8;overflow:visible}
+.tay-lightbox::backdrop{background:rgba(12,16,13,.88);backdrop-filter:blur(7px)}
+.tay-lightbox figure{height:100%;margin:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:15px}
+.tay-lightbox figure img{max-width:100%;max-height:calc(100% - 35px);object-fit:contain}
+.tay-lightbox figcaption{font-size:11px;letter-spacing:.08em;color:#d9ddcf;text-align:center}
+.tay-lightbox button{position:absolute;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.08);color:white;cursor:pointer;display:grid;place-items:center}
+.lightbox-close{top:14px;right:16px;width:42px;height:42px;border-radius:50%;font-size:28px}
+.lightbox-prev,.lightbox-next{top:50%;width:44px;height:60px;transform:translateY(-50%);font-size:38px}
+.lightbox-prev{left:14px}.lightbox-next{right:14px}
+.lightbox-counter{position:absolute;bottom:15px;left:50%;transform:translateX(-50%);font-size:9px;letter-spacing:.15em;color:#d9ddcf}
+@media(max-width:760px){.topbar{min-height:70px;padding:0 5%;gap:12px}.header-subline{padding:11px 5%;font-size:8px}.hero{padding-top:48px;min-height:0}.hero-actions{flex-wrap:wrap;gap:16px}.section{padding-top:68px;padding-bottom:68px}.section-heading{align-items:flex-start;gap:20px;flex-direction:column}.featured-grid{grid-template-columns:1fr;gap:32px}.featured-card:first-child{grid-column:auto}.featured-image,.featured-card:not(:first-child) .featured-image{height:clamp(230px,65vw,360px)}.tay-lightbox{width:100vw;height:100dvh;max-height:100dvh;padding:65px 48px 55px}.lightbox-prev,.lightbox-next{width:34px;height:48px}.lightbox-prev{left:5px}.lightbox-next{right:5px}.lightbox-close{top:12px;right:12px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal-ready{opacity:1;transform:none}body{animation:none}}

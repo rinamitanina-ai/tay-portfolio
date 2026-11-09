@@ -1,0 +1,114 @@
+/* Individual case study pages */
+.case-page{padding:0 6.2% 90px}
+.case-hero{padding:85px 0 80px;display:grid;grid-template-columns:.8fr 1.2fr;gap:6%;align-items:center}
+.case-hero h1{font-size:clamp(82px,13vw,170px);line-height:.83;letter-spacing:-.1em;margin:0 0 24px;color:var(--deep)}
+.case-hero h1 span{font-size:.3em;color:var(--orange);vertical-align:top;margin-left:12px}
+.case-lead{font-size:17px;line-height:1.6;max-width:420px;color:#697066}
+.case-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:42px;padding-top:20px;border-top:1px solid var(--line)}
+.case-facts div{display:flex;flex-direction:column;gap:7px}
+.case-facts small{font-size:8px;letter-spacing:.13em;color:var(--muted)}
+.case-facts strong{font-size:10px;font-weight:600}
+.case-hero-image{height:500px;background:#e9ecdf;overflow:hidden}
+.case-hero-image img{width:100%;height:100%;object-fit:cover;display:block}
+.case-section{display:grid;grid-template-columns:.25fr 1fr;gap:7%;padding:82px 0;border-top:1px solid var(--line)}
+.case-section-label{display:flex;gap:14px;align-items:center;font-size:9px;letter-spacing:.13em;color:var(--muted)}
+.case-section-label span:first-child{color:var(--orange);font-weight:700}
+.case-copy{max-width:760px}
+.case-copy h2,.gallery-heading h2,.case-outcome h2{font-size:clamp(43px,6vw,76px);line-height:1.02;margin:0 0 26px}
+.case-copy h2 em,.gallery-heading h2 em,.case-outcome h2 em{font-family:Georgia,serif;font-weight:400;color:var(--green)}
+.case-copy>p,.case-outcome>p:not(.eyebrow){max-width:700px;color:#687066;font-size:14px;line-height:1.9}
+.problem-list{margin-top:30px;border-top:1px solid var(--line)}
+.problem-list div{display:grid;grid-template-columns:55px 1fr;gap:10px;padding:15px 0;border-bottom:1px solid var(--line);font-size:12px;line-height:1.6}
+.problem-list b{color:var(--orange);font-size:10px}
+.case-visual-break{margin:20px 0 75px;background:#e9ecdf}
+.case-visual-break img{width:100%;max-height:760px;object-fit:cover;display:block}
+.case-visual-break p{margin:0;padding:14px 18px;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.case-concept{border-top:1px solid var(--line)}
+.case-gallery{padding:75px 0 90px;border-top:1px solid var(--line)}
+.gallery-heading{margin-bottom:35px}
+.gallery-heading .eyebrow{margin-bottom:16px}
+.gallery-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.gallery-item{margin:0;min-width:0}
+.gallery-item img{width:100%;height:100%;max-height:580px;object-fit:cover;display:block;background:#f1eee5}
+.gallery-logo{grid-column:span 2}
+.gallery-logo img{max-height:520px;object-fit:contain}
+.gallery-colors img{max-height:480px}
+.gallery-system img{max-height:480px}
+.gallery-item figcaption{display:flex;justify-content:space-between;gap:12px;padding-top:12px;font-size:9px;color:var(--muted);letter-spacing:.04em}
+.gallery-item figcaption span:first-child{color:var(--orange)}
+.case-packaging{padding-top:75px}
+.case-dieline{max-width:850px;margin:0 auto 90px}
+.case-dieline img{max-height:650px;object-fit:contain;background:#f4f0e7}
+.case-outcome{padding:75px 8%;background:var(--deep);color:var(--cream);position:relative}
+.case-outcome .eyebrow{color:#c7d1c1}
+.case-outcome h2{font-size:clamp(48px,7vw,88px);max-width:700px}
+.case-outcome h2 em{color:#efa16c}
+.case-outcome>p:not(.eyebrow){color:#d2d7ce}
+.case-outcome img{display:block;width:min(100%,760px);margin:45px auto 0}
+.case-next{padding:35px 0 0;display:flex;justify-content:space-between;align-items:end;gap:20px}
+.next-project{display:flex;flex-direction:column;gap:8px;text-align:right}
+.next-project small{font-size:8px;letter-spacing:.13em;color:var(--muted)}
+.next-project strong{font:700 20px var(--display)}
+@media(max-width:760px){
+ .case-page{padding:0 6% 65px}
+ .case-hero{padding:55px 0 55px;grid-template-columns:1fr;gap:30px}
+ .case-hero-image{height:340px;grid-row:1}
+ .case-hero-copy{grid-row:2}
+ .case-facts{margin-top:28px}
+ .case-section{grid-template-columns:1fr;gap:20px;padding:55px 0}
+ .case-section-label{margin-bottom:5px}
+ .case-visual-break{margin:5px 0 55px}
+ .case-gallery{padding:55px 0}
+ .gallery-grid{grid-template-columns:1fr;gap:28px}
+ .gallery-logo{grid-column:auto}
+ .gallery-logo img,.gallery-colors img,.gallery-system img{max-height:none}
+ .case-outcome{padding:55px 7%}
+ .case-next{align-items:flex-start;flex-direction:column}
+ .next-project{text-align:left}
+}
+
+/* Mur i Gav project-specific details */
+.mur-hero{grid-template-columns:.78fr 1.22fr}
+.mur-title{font-size:clamp(70px,10vw,130px)!important;letter-spacing:-.085em!important;line-height:.82!important}
+.mur-title em{font-family:Georgia,serif;font-weight:400;color:#b95b38}
+.mur-title span{font-size:.25em;color:#c9653e;vertical-align:top;margin-left:10px}
+.mur-cover{height:570px;background:#f3dfcc}
+.mur-cover img{object-fit:cover;object-position:top center}
+.mur-full img{max-height:780px;object-fit:cover;object-position:center}
+.mur-logo-feature{margin:15px auto 80px;max-width:1000px;background:#f7eee1;display:flex;flex-direction:column;align-items:center;padding:35px 5% 20px}
+.mur-logo-feature img{width:100%;max-height:580px;object-fit:contain}
+.mur-logo-feature span{align-self:flex-end;font-size:8px;letter-spacing:.14em;color:#897c6d}
+.mur-logo-board img{max-height:760px;object-fit:contain;background:#f7f1e8}
+.mur-packaging-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin:0 0 85px}
+.mur-packaging-grid figure{margin:0;min-width:0;background:#f4e8db}
+.mur-packaging-grid img{width:100%;height:100%;max-height:650px;object-fit:contain;display:block}
+.mur-packaging-grid figcaption{padding:13px 16px;font-size:8px;letter-spacing:.13em;color:#897c6d}
+.mur-site img{max-height:none;object-fit:contain;background:#f6e8db}
+@media(max-width:760px){
+ .mur-hero{grid-template-columns:1fr}
+ .mur-cover{height:350px}
+ .mur-logo-feature{margin:0 auto 55px;padding:15px 3%}
+ .mur-packaging-grid{grid-template-columns:1fr;gap:18px;margin-bottom:55px}
+ .mur-packaging-grid img{max-height:none}
+}
+
+
+/* Shared portfolio polish */
+body{animation:tayPageIn .45s ease both}
+@keyframes tayPageIn{from{opacity:.75}to{opacity:1}}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--orange);outline-offset:4px}
+.reveal-ready{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--reveal-delay,0ms)}
+.reveal-ready.is-visible{opacity:1;transform:translateY(0)}
+.lightbox-trigger{cursor:zoom-in}
+.tay-lightbox{width:min(94vw,1250px);height:min(92vh,900px);max-width:none;max-height:none;padding:55px 76px 45px;border:0;background:rgba(22,27,23,.97);color:#fffdf8;overflow:visible}
+.tay-lightbox::backdrop{background:rgba(12,16,13,.88);backdrop-filter:blur(7px)}
+.tay-lightbox figure{height:100%;margin:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:15px}
+.tay-lightbox figure img{max-width:100%;max-height:calc(100% - 35px);object-fit:contain}
+.tay-lightbox figcaption{font-size:11px;letter-spacing:.08em;color:#d9ddcf;text-align:center}
+.tay-lightbox button{position:absolute;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.08);color:white;cursor:pointer;display:grid;place-items:center}
+.lightbox-close{top:14px;right:16px;width:42px;height:42px;border-radius:50%;font-size:28px}
+.lightbox-prev,.lightbox-next{top:50%;width:44px;height:60px;transform:translateY(-50%);font-size:38px}
+.lightbox-prev{left:14px}.lightbox-next{right:14px}
+.lightbox-counter{position:absolute;bottom:15px;left:50%;transform:translateX(-50%);font-size:9px;letter-spacing:.15em;color:#d9ddcf}
+@media(max-width:760px){.topbar{min-height:70px;padding:0 5%;gap:12px}.header-subline{padding:11px 5%;font-size:8px}.hero{padding-top:48px;min-height:0}.hero-actions{flex-wrap:wrap;gap:16px}.section{padding-top:68px;padding-bottom:68px}.section-heading{align-items:flex-start;gap:20px;flex-direction:column}.featured-grid{grid-template-columns:1fr;gap:32px}.featured-card:first-child{grid-column:auto}.featured-image,.featured-card:not(:first-child) .featured-image{height:clamp(230px,65vw,360px)}.tay-lightbox{width:100vw;height:100dvh;max-height:100dvh;padding:65px 48px 55px}.lightbox-prev,.lightbox-next{width:34px;height:48px}.lightbox-prev{left:5px}.lightbox-next{right:5px}.lightbox-close{top:12px;right:12px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal-ready{opacity:1;transform:none}body{animation:none}}
